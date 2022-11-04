@@ -2,10 +2,12 @@
 function max_array($arr){
   $max_number = $arr[0];
   foreach($arr as $a){
-    $max_number <= $a;
+    if($max_number < $a){
+    $max_number = $a;
+    }
   }
 
   return $max_number;
 }
-$arr = array(9, 7, 4, 2);
+$arr = array(9, 13, 4, 2);
 echo max_array($arr);
